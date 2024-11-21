@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header class="bg-white">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8" aria-label="Global" >
+              <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+                </a>
+              </div>
+              <div class="flex lg:hidden">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:flex lg:gap-x-12">
+                <div class="relative">
+                  <button type="button" class="flex items-center gap-x-1 text-lg font-semibold text-gray-600" aria-expanded="false">
+                    Home
+                  </button>
+                </div>
+                <a href="#" class="text-lg font-semibold text-gray-600">About Us</a>
+                <a href="#" class="text-lg font-semibold text-gray-600">Services</a>
+                <a href="#" class="text-lg font-semibold text-gray-600">Blog</a>
+                <a href="#" class="text-lg font-semibold text-gray-600">Gallery</a>
+                <a href="#" class="text-lg font-semibold text-gray-600">Video</a>
+                <a href="#" class="text-lg font-semibold text-gray-600">Contact Us</a>
+              </div>
+              <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <button type="button" class="bg-sky-400 py-3 px-5 rounded-md text-white font-semibold">
+                    Book Appoinment
+                </button>
+              </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="lg:hidden" role="dialog" aria-modal="true">
+              <!-- Background backdrop, show/hide based on slide-over state. -->
+              <div class="fixed inset-0 z-10"></div>
+              <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                  <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                  </a>
+                  <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                      <div class="-mx-3">
+                        <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                          Product
+                        </button>
+                      </div>
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                    </div>
+                    <div class="py-6">
+                      <button type="button" class="bg-sky-400">
+    
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+    </div>
+      
+    <body class="bg-gradient-to-r from-blue-100 via-yellow-100 to-pink-100 min-h-screen">
 
+        <!-- Main Container -->
+        <div class="max-w-4xl mx-auto px-4 lg:px-8 py-10">
+          <!-- Header Section -->
+          <div class="text-center mb-8">
+            <p class="text-sm font-semibold text-pink-600">Complete Health Care</p>
+            <h1 class="text-3xl lg:text-5xl font-bold text-gray-800 mt-2">
+              For Women & Babies
+            </h1>
+            <p class="text-gray-600 mt-4">
+              A baby will make love stronger, days shorter, nights longer, bankroll smaller, home happier, clothes shabbier.
+            </p>
+            <button class="mt-6 px-6 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md">
+              Book Appointment
+            </button>
+          </div>
+      
+          <!-- Images Section -->
+          <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+            <!-- Couple Image -->
+            <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-pink-400">
+              <img src="https://via.placeholder.com/300" alt="Couple" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Mother and Baby Image -->
+            <div class="relative">
+              <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400">
+                <img src="https://via.placeholder.com/300" alt="Mother and Baby" class="w-full h-full object-cover">
+              </div>
+              <!-- Baby Wrapped Image Overlay -->
+              <div class="absolute -bottom-8 -left-10 w-32 h-32 rounded-full border-4 border-pink-300 overflow-hidden">
+                <img src="https://via.placeholder.com/150" alt="Baby Wrapped" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
